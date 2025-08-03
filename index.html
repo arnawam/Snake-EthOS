@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Snake Game Mod</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="gameContainer">
+    <h1>Snake Game</h1>
+    <div id="usernamePrompt">
+      <label for="username">Masukkan nama kamu:</label>
+      <input type="text" id="username" />
+      <button onclick="startGame()">Mulai</button>
+    </div>
+    <div id="gameArea" style="display:none;">
+      <canvas id="gameCanvas" width="400" height="400"></canvas>
+      <div id="score">Score: 0</div>
+    
+    <div id="controls" style="display:none; margin-top: 10px;">
+      <button onclick="setDirection('UP')">⬆️</button><br>
+      <button onclick="setDirection('LEFT')">⬅️</button>
+      <button onclick="setDirection('DOWN')">⬇️</button>
+      <button onclick="setDirection('RIGHT')">➡️</button>
+    </div>
+    </div>
+    <div id="gameOver" style="display:none;"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
